@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+---
+<section>
+  <h1>Blog</h1>
+  <p>Writing about systems thinking, building products, and the journey from engineer to founder.</p>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <article>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <div class="post-meta">
+          <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        </div>
+        {% if post.description %}
+        <p class="post-excerpt">{{ post.description }}</p>
+        {% endif %}
+      </article>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+

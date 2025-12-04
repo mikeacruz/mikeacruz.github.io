@@ -1,0 +1,29 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+vendor/
+.bundle/
+
+# Optional: Gemfile.lock
+# Uncomment the line below if you want to ignore Gemfile.lock
+# (GitHub Pages typically commits it for consistency, but you can ignore it if using local vendor installs)
+# Gemfile.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Node modules (if you add any node tooling later)
+node_modules/
+

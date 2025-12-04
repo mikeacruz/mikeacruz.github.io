@@ -1,0 +1,35 @@
+title: "Michael A. Cruz"
+description: "Engineer, Founder, Writer. Building products in embedded, AI, and fintech. Writing about systems thinking, building in public, and empowering entrepreneurs in the Caribbean and Central America."
+url: "https://michaelacruz.com"
+baseurl: ""
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - "*.scss"
+  - "*.sass"
+
+# Include static files
+include:
+  - style.css
+
+# Disable SCSS converter entirely (we use plain CSS)
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Override converters to skip SCSS
+converters: []
+
