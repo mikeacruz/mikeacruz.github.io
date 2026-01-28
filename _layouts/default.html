@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>{% if page.title %}{{ page.title }} – {% endif %}Michael A. Cruz – Engineer, Founder, Writer</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}Michael A. Cruz – Building and shipping.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
@@ -11,7 +11,7 @@
   <body>
     <header>
       <h1><a href="{{ '/' | relative_url }}">Michael A. Cruz</a></h1>
-      <p class="tagline">{% if page.tagline %}{{ page.tagline }}{% else %}Engineer, founder, writing in public.{% endif %}</p>
+      <p class="tagline">{% if page.tagline %}{{ page.tagline }}{% else %}Building and shipping.{% endif %}</p>
       <nav>
         <a href="{{ '/' | relative_url }}">Home</a>
         <a href="{{ '/blog/' | relative_url }}">Blog</a>
