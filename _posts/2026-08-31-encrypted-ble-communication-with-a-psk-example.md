@@ -6,6 +6,8 @@ description: "A practical example of application-layer AES-GCM encryption betwee
 tags: [bluetooth, ble, security, encryption, software-engineering]
 ---
 
+[https://github.com/mikeacruz/ble-secure-demo](https://github.com/mikeacruz/ble-secure-demo)
+
 I was invited to teach a Software Engineering class at my alma mater last fall. I decided to teach the students about Bluetooth Low Energy and cybersecurity concepts. I remember being a Computer Engineering senior struggling to find examples around BLE for my capstone project. Searching online yields either the Bluetooth docs or a bunch of dev shops selling BLE know-how, but hardly any examples unless your development kit or stack provides them. Even so, they don’t really show it in action.
 
 Even now with easy access to LLMs, you can build and run something pretty quickly, but it gets complicated pretty fast, especially if you want to take it to production. Hence, my goal here is to show an example as opposed to teaching deep BLE and security concepts.
