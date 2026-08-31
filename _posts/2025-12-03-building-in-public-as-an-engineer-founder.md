@@ -6,7 +6,7 @@ description: "Notes written after building and learning."
 tags: [writing, building]
 ---
 
-I build products. Occasionally, something is worth documenting.
+I build things. Occasionally, something is worth documenting.
 
 This site is a log, not a feed. I write here after something has been built, tested, or learned, not while it’s hypothetical. I spend enough time in my head already.
 
