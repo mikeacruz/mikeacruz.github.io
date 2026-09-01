@@ -45,9 +45,14 @@ To preview your site locally before publishing:
    layout: post
    title: "Your Post Title"
    date: YYYY-MM-DD HH:MM:SS -0000
+   description: "A concise summary for search engines and link previews."
+   image: /assets/images/your-post-social-card.png
+   image_alt: "A meaningful description of the social preview image"
    ---
    ```
 4. Write your content in Markdown below the front matter
+
+The default layout generates Open Graph and Twitter card metadata for every page. For posts, `description` supplies the preview summary; the optional `image` and `image_alt` fields add a large social preview image. Use a 1200×627 image. It will not appear in the article unless you also add it to the Markdown content.
 
 ## Project Structure
 
@@ -58,6 +63,7 @@ To preview your site locally before publishing:
 - `blog/index.html` - Blog listing page
 - `CNAME` - Custom domain configuration
 - `assets/css/` - Stylesheets
+- `assets/images/` - Social preview and content images
 
 ## Custom Domain
 

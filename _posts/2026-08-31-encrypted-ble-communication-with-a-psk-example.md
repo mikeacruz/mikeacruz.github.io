@@ -4,6 +4,8 @@ title: "Encrypted BLE Communication with a PSK Example"
 date: 2026-08-31
 description: "A practical example of application-layer AES-GCM encryption between a Python BLE Central and a Node.js BLE Peripheral."
 tags: [bluetooth, ble, security, encryption, software-engineering]
+image: /assets/images/ble-secure-demo.png
+image_alt: "Encrypted Bluetooth Low Energy packet data shown in Apple PacketLogger"
 ---
 
 Source code: [mikeacruz/ble-secure-demo](https://github.com/mikeacruz/ble-secure-demo)
