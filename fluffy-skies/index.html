@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Fluffy Skies | Michael A. Cruz</title>
+    <meta name="description" content="A game I launched with my friend Jhoel in 2016. Play Fluffy Skies with its original graphics, music, and gameplay.">
+    <link rel="canonical" href="https://michaelacruz.com/fluffy-skies/">
+    <meta property="og:title" content="Fluffy Skies">
+    <meta property="og:description" content="A game I launched with my friend Jhoel in 2016. My first product, now playable here with the original graphics and music.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://michaelacruz.com/fluffy-skies/">
+    <meta property="og:image" content="https://michaelacruz.com/assets/fluffy-skies/images/title.png">
+    <meta property="og:image:alt" content="The original Fluffy Skies logo">
+    <meta name="theme-color" content="#17102e">
+    <link rel="icon" href="../assets/fluffy-skies/images/cat.png" type="image/png">
+    <link rel="preload" href="../assets/fluffy-skies/fonts/Modak-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="../assets/fluffy-skies/game.css">
+    <script type="module" src="../assets/fluffy-skies/game.js"></script>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="back-link" href="../">← Michael A. Cruz</a>
+      <span class="edition">Originally launched in 2016</span>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>Fluffy Skies</h1>
+        <p>Help Fluffy get to the moon.</p>
+      </div>
+      <div class="game-wrap">
+        <div class="game-stage" id="game-stage" data-state="loading" role="group" aria-label="Fluffy Skies game">
+          <canvas id="game" width="720" height="1080" tabindex="0" aria-label="Game field. Swipe left or right, or use the arrow keys, to guide the cat through gaps in the clouds." aria-describedby="instructions"></canvas>
+          <div class="scene-ui" id="menu-ui" hidden>
+            <button class="icon-button play-button bob" style="--x:50%;--y:50%" id="play" aria-label="Play Fluffy Skies" title="Play">
+              <img src="../assets/fluffy-skies/images/icons/Play.png" data-rest="Play" data-pressed="PlayOutline" alt="" draggable="false">
+            </button>
+            <button class="icon-button bob" style="--x:25%;--y:56.25%" id="achievements" aria-label="Achievements" title="Achievements">
+              <img src="../assets/fluffy-skies/images/icons/Achievements.png" alt="" draggable="false">
+            </button>
+            <button class="icon-button bob" style="--x:75%;--y:56.25%" id="records" aria-label="Your best flights" title="Your best flights">
+              <img src="../assets/fluffy-skies/images/icons/Leaderboard.png" alt="" draggable="false">
+            </button>
+            <button class="icon-button bob" style="--x:50%;--y:62.5%" id="menu-sound" aria-label="Mute sound" title="Mute sound" aria-pressed="false">
+              <img id="sound-icon" src="../assets/fluffy-skies/images/icons/SoundOn.png" alt="" draggable="false">
+            </button>
+          </div>
+          <div class="scene-ui" id="over-ui" hidden>
+            <button class="icon-button bob" style="--x:25%;--y:65.833%" id="home" aria-label="Return to main menu" title="Main menu">
+              <img src="../assets/fluffy-skies/images/icons/Home.png" data-rest="Home" data-pressed="HomeOutline" alt="" draggable="false">
+            </button>
+            <button class="icon-button bob" style="--x:50%;--y:65.833%" id="retry" aria-label="Play again" title="Play again">
+              <img src="../assets/fluffy-skies/images/icons/Retry.png" data-rest="Retry" data-pressed="RetryClicked" alt="" draggable="false">
+            </button>
+            <button class="icon-button bob" style="--x:75%;--y:65.833%" id="share" aria-label="Share your score" title="Share score">
+              <img src="../assets/fluffy-skies/images/icons/Share.png" data-rest="Share" data-pressed="ShareOutline" alt="" draggable="false">
+            </button>
+          </div>
+          <div class="stage-message" id="loading-ui" role="status">
+            <img class="loading-cat" src="../assets/fluffy-skies/images/cat.png" alt="">
+            <p id="loading-label">Warming up the rocket…</p>
+            <button id="reload" hidden>Try again</button>
+          </div>
+          <div class="stage-message paused" id="pause-ui" hidden>
+            <p class="pause-title">Taking a breather.</p>
+            <p>Your flight is right where you left it.</p>
+            <button class="primary-button" id="resume">Resume flight</button>
+            <button class="text-button" id="quit">Back to menu</button>
+          </div>
+          <p id="game-hint" class="game-hint" hidden>Swipe ← → to find the gap</p>
+          <noscript><p class="stage-message">Enable JavaScript to play Fluffy Skies.</p></noscript>
+        </div>
+        <div class="toolbar" aria-label="Game controls">
+          <div class="movement-controls">
+            <button id="left" aria-label="Move left" title="Move left (← or A)" disabled>←</button>
+            <button id="right" aria-label="Move right" title="Move right (→ or D)" disabled>→</button>
+          </div>
+          <div class="utility-controls">
+            <button id="pause" aria-label="Pause game" title="Pause (P or Escape)" disabled>Pause</button>
+            <button id="sound" aria-label="Mute sound" aria-pressed="false" disabled>Sound on</button>
+          </div>
+        </div>
+        <p class="instructions" id="instructions">Swipe left or right. On a keyboard, use <kbd>←</kbd> <kbd>→</kbd> or <kbd>A</kbd> <kbd>D</kbd>.<br>Find the gap. Keep flying.</p>
+        <p class="status" id="status" role="status" aria-live="polite">Loading the original game assets.</p>
+      </div>
+      <section class="story" aria-labelledby="story-title">
+        <span class="story-year">2016 → 2026</span>
+        <h2 id="story-title">The first product I launched.</h2>
+        <p>My friend Jhoel and I launched Fluffy Skies under Looper Studios in 2016. It was my first product, and it still means a lot to me. Ten years later, I wanted to bring it back with the original graphics, music, and gameplay.</p>
+        <p class="local-note">Your best scores and achievements stay in this browser.</p>
+      </section>
+    </main>
+    <footer><a href="../">Michael A. Cruz</a> <span>·</span> Fluffy Skies / Looper Studios</footer>
+    <dialog id="details-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-header"><h2 id="dialog-title">Your flights</h2><button id="close-dialog" aria-label="Close">×</button></div>
+      <div id="dialog-content"></div>
+    </dialog>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+{
+  "images/background.png": {
+    "source": "Other/1080x720/PNGs/background_1080x720.png",
+    "sha256": "08c196be41a0c31753f77cad14da952ca599e3a0e9910448b8a321e17c95be90"
+  },
+  "images/stars.png": {
+    "source": "Other/1080x720/PNGs/stars_1080x720.png",
+    "sha256": "3f833300bdf70d156f587d81d37d4038e9849abcee6c9912e8450cdd411c9230"
+  },
+  "images/stars-effect.png": {
+    "source": "Resources/hiResAndroid/Sky/StarsEffect.png",
+    "sha256": "fdde1a244858268d79edcb356320236d969cfa5fe8bb396810a0074bf9807062"
+  },
+  "images/menu-background.png": {
+    "source": "Resources/hiResAndroid/Sky/MainBackground.png",
+    "sha256": "c4a630aa4d54a801d2e4a4c53c44d9d3aae3a70b3191fc099fd9df791ef24019"
+  },
+  "images/hills.png": {
+    "source": "Other/1080x720/PNGs/Hills.png",
+    "sha256": "4a36fed41454340b030d49d01306369f227406f2c7214292ad498f70e95a4cbf"
+  },
+  "images/title.png": {
+    "source": "Other/1080x720/PNGs/Title.png",
+    "sha256": "a6a11da934594dc2f0f42119955227c50ea678f368653e656d508285a9543092"
+  },
+  "images/cat.png": {
+    "source": "Final Graphs/1080x720/PNGs/Cat.png",
+    "sha256": "f45fb008e009f6b00d4cbf95f7d638b4966a2c71ad75619225c4ea2ed30c7b5f"
+  },
+  "images/rocket.png": {
+    "source": "Final Graphs/1080x720/PNGs/Rocket.png",
+    "sha256": "a9755f24cf424b8fa5eddac9c51e41c5fdc29e86c382ae7caeb11ebabcc93002"
+  },
+  "images/burnt-cat.png": {
+    "source": "Resources/hiResAndroid/Sky/MeowBurnt.png",
+    "sha256": "9410a31bca534960ca34a4e502daf29ad0422d7869cd4c80e973e262a0a1d0b2"
+  },
+  "images/crash-rocket.png": {
+    "source": "Resources/hiResAndroid/Sky/Rocket.png",
+    "sha256": "b05b39eeaeddba8abf4884bacbe139da24afa4194b4ef702f0c61802dc3b117a"
+  },
+  "images/cloud.png": {
+    "source": "Resources/hiResAndroid/Cloud.png",
+    "sha256": "ce2da92ffc26c014ede369a4aa49e8a13bd1de8728ef14344ad5d229f1aed4e9"
+  },
+  "images/splash.png": {
+    "source": "Other/1080x720/PNGs/looper_1080x720.png",
+    "sha256": "b99fcbbbabd0272b23b383b034164664c46c55a4298944c0d85a8b8413a8ce8e"
+  },
+  "images/icons/Play.png": {
+    "source": "Resources/hiResAndroid/Icons/Play.png",
+    "sha256": "fa7f9e83719b32ea65d60726ed39b1fbf7c2f800a3d11174c6bba53cb1359d78"
+  },
+  "images/icons/PlayOutline.png": {
+    "source": "Resources/hiResAndroid/Icons/PlayOutline.png",
+    "sha256": "e7ff0fbfaa0a314e0e9bb340ce9a1299fe78b9105e481e195ac981158ef85dae"
+  },
+  "images/icons/Home.png": {
+    "source": "Resources/hiResAndroid/Icons/Home.png",
+    "sha256": "aa15079287d991bd1632a7d09ff598c0931da7a05eaa821b64a9b977f8237df6"
+  },
+  "images/icons/HomeOutline.png": {
+    "source": "Resources/hiResAndroid/Icons/HomeOutline.png",
+    "sha256": "17e79c5210a2feb3e1afecf27f96284c55fd39f7bf31ae0903c26128a0d8fc35"
+  },
+  "images/icons/Retry.png": {
+    "source": "Resources/hiResAndroid/Icons/Retry.png",
+    "sha256": "7275a74c761523b035bd80706548dc973f55871fc999f03224fbbf4f85f85a09"
+  },
+  "images/icons/RetryClicked.png": {
+    "source": "Resources/hiResAndroid/Icons/RetryClicked.png",
+    "sha256": "1d6f323d09b728d55bf7bf841cb9f39a8eed4755641bd262343f0b65b95c1702"
+  },
+  "images/icons/Share.png": {
+    "source": "Resources/hiResAndroid/Icons/Share.png",
+    "sha256": "a4c92103f08ba63d6f5af2c27f111923537e05acd4b7840eb20c2c2139b32108"
+  },
+  "images/icons/ShareOutline.png": {
+    "source": "Resources/hiResAndroid/Icons/ShareOutline.png",
+    "sha256": "6e3979e2f910278f4227959f6d298761952466c4d26592848e700789e27541af"
+  },
+  "images/icons/SoundOn.png": {
+    "source": "Resources/hiResAndroid/Icons/SoundOn.png",
+    "sha256": "7568b86addae84d3f8f40800f73bd6b7c7a6f2112aafd80d02be3e215ff49bc5"
+  },
+  "images/icons/SoundOnOutline.png": {
+    "source": "Resources/hiResAndroid/Icons/SoundOnOutline.png",
+    "sha256": "b013cb4c9be641df690d682925275035aa4e5edb6f82f72e13dc7a66794237ed"
+  },
+  "images/icons/SoundOff.png": {
+    "source": "Resources/hiResAndroid/Icons/SoundOff.png",
+    "sha256": "f06e4360815f01ed23a09c37129bbbf413a4cc3f9a8243fb05119d81403fe8e3"
+  },
+  "images/icons/SoundOffOutline.png": {
+    "source": "Resources/hiResAndroid/Icons/SoundOffOutline.png",
+    "sha256": "e9871e2d8cbb93af860ec33864c64cdbaae5811f55401656f8cabf3a3581c7c7"
+  },
+  "images/icons/Achievements.png": {
+    "source": "Resources/hiResAndroid/Icons/Achievements.png",
+    "sha256": "28c9492795225d5315913a2a56035709011bc1aaceec080af92f6609446c5753"
+  },
+  "images/icons/Leaderboard.png": {
+    "source": "Resources/hiResAndroid/Icons/Leaderboard.png",
+    "sha256": "624deee2a9ab659289b7592f9c14a1a69b166d02d4922323aa569a4b9fde1bd8"
+  },
+  "images/icons/NewBest.png": {
+    "source": "Resources/hiResAndroid/Icons/NewBest.png",
+    "sha256": "3c65f2aa01877ac4c6adf45c9a85c9b1d71d58e9df0c70a19420219368bbfaa7"
+  },
+  "audio/Fluffy.mp3": {
+    "source": "Resources/Sounds/Fluffy.mp3",
+    "sha256": "3c3ee96dad746c32e958afd4d8cbd0d5ba7b5e359afcf5e74f22365181cc279b"
+  },
+  "audio/Wing.mp3": {
+    "source": "Resources/Sounds/Wing.mp3",
+    "sha256": "3373ddd18087384f07bcb318c17ccad8dfe8c62fe2b7258071479d7e50b9428b"
+  },
+  "audio/Blop.mp3": {
+    "source": "Resources/Sounds/Blop.mp3",
+    "sha256": "abd654a8166d2b6f943fc64404eea5eb58cceffe8bcded73560b243c28532f16"
+  },
+  "audio/Hit.mp3": {
+    "source": "Resources/Sounds/Hit.mp3",
+    "sha256": "c8de73ca4fab54190168ad08e680ba38909b147c239c0ecc26e2a3129e34e399"
+  },
+  "audio/Point.mp3": {
+    "source": "Resources/Sounds/Point.mp3",
+    "sha256": "d876491eae8b449f3c9d0c9cc0764caf9e13c484afab0c7a7bb7751eee5b69a5"
+  },
+  "images/particle.png": {
+    "source": "Resources/ParticleEffects/jetThrower.plist: textureImageData (decoded PNG)"
+  },
+  "fonts/Modak-Regular.ttf": {
+    "source": "Fonts/modak.zip: Modak-Regular.ttf"
+  },
+  "fonts/OFL.txt": {
+    "source": "Fonts/modak.zip: OFL.txt"
+  }
+}

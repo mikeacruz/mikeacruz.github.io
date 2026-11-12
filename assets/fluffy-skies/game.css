@@ -1,0 +1,88 @@
+@font-face {
+  font-family: Modak;
+  src: url('./fonts/Modak-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #292332; background: #faf9f6; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; cursor: pointer; touch-action: manipulation; }
+button:disabled { opacity: .35; cursor: default; }
+a { color: inherit; text-underline-offset: 4px; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid #8f55c5; outline-offset: 5px; }
+.page-header { max-width: 1040px; padding: 28px 32px 0; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 13px; }
+.back-link { text-decoration: none; font-weight: 550; }
+.back-link:hover { text-decoration: underline; }
+.edition { color: #79717b; }
+.intro { text-align: center; margin: 30px 16px 22px; }
+.intro h1 { font-size: 20px; letter-spacing: -.6px; margin: 0 0 5px; font-weight: 650; }
+.intro p { font-size: 14px; color: #79717b; margin: 0; }
+.game-wrap { width: min(440px, calc(100% - 32px)); margin: auto; }
+.game-stage { width: 100%; aspect-ratio: 2 / 3; position: relative; background: #111c3b; border-radius: 14px; overflow: hidden; box-shadow: 0 18px 60px #23103b26, 0 2px 5px #23103b1a; isolation: isolate; container-type: inline-size; }
+canvas { display: block; width: 100%; height: 100%; touch-action: none; user-select: none; -webkit-user-select: none; }
+canvas:focus-visible { outline: 3px solid #dfbcff; outline-offset: -4px; border-radius: 14px; }
+.scene-ui { position: absolute; inset: 0; pointer-events: none; }
+.icon-button { pointer-events: auto; position: absolute; left: var(--x); top: var(--y); width: max(44px, 8.889%); aspect-ratio: 1; border: 0; padding: 0; background: transparent; transform: translate(-50%, -50%); border-radius: 50%; }
+.icon-button img { width: 100%; height: 100%; display: block; object-fit: contain; pointer-events: none; }
+.icon-button:hover { filter: brightness(1.13); }
+.icon-button:active { filter: brightness(.9); }
+.icon-button:focus-visible { outline-color: #fff; }
+.play-button { width: max(64px, 17.778%); }
+.bob { animation: bob 2s ease-in-out infinite alternate; }
+@keyframes bob { from { translate: 0 0; } to { translate: 0 -5px; } }
+.stage-message { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 14px; padding: 28px; text-align: center; color: #fff; background: #16172fea; }
+.stage-message p { margin: 0; font-size: 14px; line-height: 1.6; }
+.stage-message button, .primary-button { background: #fff; color: #322444; border: 0; padding: 13px 22px; border-radius: 8px; font-weight: 650; min-height: 44px; }
+.loading-cat { width: 45px; height: auto; animation: bob 1s ease-in-out infinite alternate; }
+.paused { background: #100d2dd9; backdrop-filter: blur(5px); }
+.paused .pause-title { font-family: Modak, system-ui, sans-serif; font-size: clamp(26px, 7cqw, 36px); }
+.paused .text-button { background: transparent; color: #ded2ec; font-weight: 400; }
+.game-hint { position: absolute; left: 0; right: 0; bottom: 15%; margin: 0; text-align: center; pointer-events: none; color: #fff; font-size: clamp(12px, 3.4cqw, 16px); text-shadow: 0 2px 8px #17102e; }
+.toolbar { display: flex; align-items: center; justify-content: space-between; margin-top: 16px; gap: 12px; }
+.toolbar > div { display: flex; gap: 6px; }
+.toolbar button { min-width: 44px; min-height: 44px; border: 1px solid #e2dce5; border-radius: 8px; background: #fffafc; color: #51465c; padding: 8px 12px; font-size: 12px; }
+.toolbar button:hover:not(:disabled) { border-color: #ab8cbd; background: #f1eaf6; }
+.toolbar .movement-controls button { font-size: 22px; padding: 4px 16px; }
+.instructions { text-align: center; line-height: 1.9; font-size: 12px; color: #77707c; margin: 16px 0 0; }
+kbd { font: inherit; color: #57475f; }
+.status { text-align: center; min-height: 20px; font-size: 12px; color: #6a507b; margin: 8px 0 0; }
+.story { max-width: 440px; margin: 44px auto 0; padding-top: 26px; border-top: 1px solid #e7e1e7; }
+.story-year { color: #89798f; font-size: 11px; letter-spacing: 1.4px; }
+.story h2 { font-size: 19px; font-weight: 600; letter-spacing: -.4px; margin: 9px 0 12px; }
+.story p { color: #716875; font-size: 14px; line-height: 1.8; margin: 0 0 14px; }
+.story .local-note { font-size: 12px; color: #938797; }
+footer { padding: 40px 16px 28px; text-align: center; color: #938797; font-size: 11px; }
+footer a { text-decoration: none; }
+footer span { padding: 0 8px; }
+dialog { width: min(430px, calc(100% - 32px)); max-height: 80dvh; padding: 24px; border: 1px solid #e6daed; border-radius: 14px; background: #faf9f6; color: #322444; box-shadow: 0 20px 100px #100d2d40; }
+dialog::backdrop { background: #100d2d99; backdrop-filter: blur(4px); }
+.dialog-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+.dialog-header h2 { font-size: 20px; margin: 0; }
+.dialog-header button { border: 0; background: #eee7f1; border-radius: 50%; width: 44px; height: 44px; color: #51465c; font-size: 24px; }
+dialog p { font-size: 14px; line-height: 1.6; color: #716875; }
+dialog h3 { font-size: 14px; margin: 24px 0 10px; }
+.milestones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 0; list-style: none; }
+.milestones li { border: 1px solid #e3dce7; border-radius: 8px; padding: 10px 6px; font-size: 12px; color: #756c7c; text-align: center; }
+.milestones .earned { background: #eee3f6; border-color: #b291ca; color: #663f7c; }
+.flight-list { padding-left: 24px; }
+.flight-list li { padding: 9px 0; border-bottom: 1px solid #e7e1e7; }
+.share-link { display: block; width: 100%; border: 1px solid #cabcd2; background: white; border-radius: 6px; padding: 12px; color: #51465c; }
+@media (max-width: 520px) {
+  .page-header { padding: 18px 20px 0; }
+  .edition { font-size: 10px; }
+  .intro { margin: 22px 16px 18px; }
+  .intro h1 { font-size: 18px; }
+  .story { margin: 36px 24px 0; }
+}
+@media (min-width: 600px) and (max-height: 850px) {
+  .game-wrap { width: min(400px, calc((100dvh - 170px) * .666667)); min-width: 280px; }
+  .intro { margin: 18px 16px; }
+  .page-header { padding-top: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bob, .loading-cat { animation: none; }
+}
